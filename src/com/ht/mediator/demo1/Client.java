@@ -1,6 +1,4 @@
-package com.ht.agency.demo1;
-
-import java.nio.charset.StandardCharsets;
+package com.ht.mediator.demo1;
 
 /**
  * Created by annuoaichengzhang on 16/3/24.

@@ -1,6 +1,4 @@
-package com.ht.agency.demo1;
-
-import org.omg.PortableInterceptor.SYSTEM_EXCEPTION;
+package com.ht.mediator.demo1;
 
 /**
  * Created by annuoaichengzhang on 16/3/24.

@@ -1,4 +1,4 @@
-package com.ht.agency.demo1;
+package com.ht.mediator.demo1;
 
 import java.util.Random;
 
