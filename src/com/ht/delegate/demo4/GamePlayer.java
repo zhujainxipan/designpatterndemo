@@ -43,7 +43,7 @@ public class GamePlayer implements IGamePlayer {
 
     @Override
     public IGamePlayer getProxy() {
-        this.proxy = new GamePlayerProxy(this.name, this.passWord);
+        this.proxy = new GamePlayerProxy(this);
         return this.proxy;
     }
 

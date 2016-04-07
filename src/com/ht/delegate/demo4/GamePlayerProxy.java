@@ -8,12 +8,8 @@ public class GamePlayerProxy implements IGamePlayer {
     private IGamePlayer gamePlayer = null;
 
     // 通过参数传递要对谁进行代练
-    public GamePlayerProxy(String gamePlayerName, String passWord) {
-        try {
-            gamePlayer = new GamePlayer(gamePlayerName, passWord);
-        } catch (Exception e) {
-            // todo
-        }
+    public GamePlayerProxy(IGamePlayer player) {
+       this.gamePlayer = player;
     }
 
     @Override
