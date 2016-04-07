@@ -13,7 +13,7 @@ public class GamePlayer implements IGamePlayer {
     }
 
     @Override
-    public void login(String name, String passWord) {
+    public void login() {
 
         System.out.println("用户" + this.name + "登陆成功");
     }
