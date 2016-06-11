@@ -4,17 +4,17 @@ package com.ht.builder.demo4;
  * Created by annuoaichengzhang on 16/4/6.
  */
 public class Director {
-    private AbstractBuilder builderA = new ConcreteBuilderA();
-    private AbstractBuilder builderB = new ConcreteBuilderB();
+    private AbstractBuilder builderA;
 
-    public AbstractProduct getProductA() {
-        this.builderA.buildPart();
-        return this.builderA.buildProduct();
+    public Director(AbstractBuilder builderA) {
+        this.builderA = builderA;
     }
 
-    public AbstractProduct getProductB() {
-        this.builderB.buildPart();
-        return this.builderB.buildProduct();
+    public Product getProductA() {
+        this.builderA.buildPartA();
+        this.builderA.buildPartB();
+        this.builderA.buildPartC();
+        return this.builderA.getProduct();
     }
 
 }
