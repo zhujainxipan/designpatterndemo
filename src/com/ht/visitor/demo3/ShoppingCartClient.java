@@ -8,11 +8,11 @@ public class ShoppingCartClient {
         ItemElement[] itemElements = new ItemElement[] {new Book(20, "1234"),new Book(100, "5678"),
                 new Fruit(10, 2, "Banana"), new Fruit(5, 5, "Apple")};
 
-        int total = calcuatePrice(itemElements);
+        int total = calcutePrice(itemElements);
         System.out.println("Total Cost = "+total);
     }
 
-    private static int calcuatePrice(ItemElement[] itemElements) {
+    private static int calcutePrice(ItemElement[] itemElements) {
         ShoppingCartVisitor visitor = new ShoppingCartVisitorImpl();
         int sum = 0;
         for (ItemElement itemElement : itemElements) {
