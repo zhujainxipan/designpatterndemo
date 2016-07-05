@@ -1,7 +1,7 @@
 package com.ht.builder.simplebuilder;
 
 /**
- * Created by annuoaichengzhang on 16/7/4.
+ * Created by niehongtao on 16/7/4.
  */
 public class Client {
     public static void main(String[] args) {
